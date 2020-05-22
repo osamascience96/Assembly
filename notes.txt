@@ -1,0 +1,4 @@
+to create the executable dos .com file and listing file of the asm file, run the following command 
+nasm file_name.asm -o file_name.com -l file_name.lst
+
+This means that take a asm file and generates its output file in .com extention and also create its listing in .lst extention(so that we can analyze the operations and data etc.)

@@ -1,0 +1,26 @@
+Make an object file of 32bits, make the following command
+nasm -f elf hello.asm
+
+Then the object file produced of 32bits must be loaded to the memory
+ld -m elf_i386 -s -o hello hello.o
+
+Then execute the following command, 
+./hello to execute the binary file.
+
+Another Step is to make an object file of 64bits, while running the nasm command explicitly
+nasm -f elf64 hello.asm
+
+Then executes the following command,
+ld hello.o -o hello
+
+That produces the binary file, and then
+./hello
+
+Know the architecture type of your machine by typing:
+uname -m
+
+If you wanna know the file for architecture, then type the following:
+file [file_name]
+
+
+
