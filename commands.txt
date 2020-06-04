@@ -23,4 +23,10 @@ If you wanna know the file for architecture, then type the following:
 file [file_name]
 
 
+to see the memory at different angles, 
+m(n) register_name:offset
+(eg): m1 ds:0100
+
+Addition of segmentbase with offset
+eg 19F5|0 + 0|0100
 
